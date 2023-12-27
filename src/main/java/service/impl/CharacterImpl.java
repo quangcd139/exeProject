@@ -1,5 +1,10 @@
 package service.impl;
 
-public interface CharacterImpl {
+import entity.Character;
 
+import java.util.List;
+
+public interface CharacterImpl {
+    List<Character> findAll();
+    
 }
