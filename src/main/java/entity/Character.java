@@ -1,20 +1,37 @@
-
 package entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@lombok.Getter
-@lombok.Setter
-@lombok.NoArgsConstructor
-@lombok.AllArgsConstructor
-@lombok.ToString
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
-public class Character extends Base{
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class Character {
+    private int id;
     private String name;
-    private String image_url;
+    private String image;
+    private String element;
+    private String path;
+    private int hp;
+    private int atk;
+    private int def;
+    private int spd;
+    private int cd;
+    private int nrg;
+    private String type; //dps, sup, ect...
+    private float ele_dam;
+
+
+
+
 
 }
-
-

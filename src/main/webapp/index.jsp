@@ -61,6 +61,10 @@
             </div>
         </div>
     </div>
+    <a href="AddCharacter.jsp">
+
+        Them nhan vat
+    </a>
 
     <script src="js/indexJs.js"></script>
 

@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface CharacterImpl {
     List<Character> findAll();
+    boolean add(Character character);
+
     
 }
